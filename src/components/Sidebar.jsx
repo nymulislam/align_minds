@@ -3,11 +3,11 @@ import { RiHome8Line } from "react-icons/ri";
 import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
-
-    const items = [
-        { label: "Mange Tasks", to: "/dashboard/allTasks"},
-        { label: "Own Tasks", to: "/dashboard/personalTasks"},
-      ];
+  const items = [
+    { label: "Mange Tasks", to: "/dashboard/allTasks" },
+    { label: "Own Tasks", to: "/dashboard/personalTasks" },
+    { label: "Add a Task", to: "/dashboard/addTask" },
+  ];
 
   return (
     <div className="w-48 p-4 min-h-screen bg-[#fff5e1]">
@@ -31,9 +31,7 @@ const Sidebar = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink
-            to="/"
-          >
+          <NavLink to="/">
             <CgProfile />
             My Profile
           </NavLink>

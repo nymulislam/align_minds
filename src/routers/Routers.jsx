@@ -6,6 +6,7 @@ import ErrorPage from "../layout/errorpage/ErrorPage";
 import Dashboard from "../layout/dashboard/Dashboard";
 import AllTask from "../components/AllTasks";
 import OwnTasks from "../components/OwnTasks";
+import AddTask from "../components/AddTask";
 
 export const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ export const router = createBrowserRouter([
       {
         path: "/dashboard/personalTasks",
         element: <OwnTasks />
+      },
+      {
+        path: "/dashboard/addTask",
+        element: <AddTask />
       },
     ],
   },
